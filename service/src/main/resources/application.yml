@@ -79,6 +79,9 @@ skills:
   clientLibVersion: @maven.build.timestamp@
   config:
     compactDailyEventsOlderThan: 30
+    notifications:
+      # run every minute
+      dispatchSchedule: "* * * * * *"
     ui:
       dashboardVersion: @pom.version@
       buildTimestamp: @maven.build.timestamp@
